@@ -1,0 +1,451 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #8b8b99;
+    --color-while: #ffff;
+    --color-green: #2a7d2e;
+}
+
+.menu-item .menu-item1 {
+    display: flex;
+}
+
+body {
+    background-color: var(--color-while);
+}
+
+html {
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+#header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 10;
+    background-color: #ffff;
+}
+
+.menu {
+    line-height: 100px;
+    width: 50%;
+}
+
+.menu-item1>li>a:hover {
+    color: var(--color-green);
+}
+
+.submenu li a:hover {
+    background-color: yellowgreen;
+    border-bottom: yellowgreen;
+    color: var(--color-while);
+}
+
+.menu-item1 {
+    position: relative;
+}
+
+.menu-item1 li {
+    list-style: none;
+}
+
+.menu-item1 li a {
+    text-decoration: none;
+    padding: 0px 15px;
+    /* color: #000; */
+    color: black;
+    display: block;
+}
+
+
+/* TÌM KIẾMS */
+
+.cac-icon {
+    display: flex;
+}
+
+
+/* phan hover */
+
+.giohang {
+    width: 240px;
+    height: 68px;
+    background: var(--color-while);
+    position: absolute;
+    right: 0px;
+    border-radius: 8px;
+    bottom: -100px;
+    border: 1px solid var(--color-green);
+    box-shadow: 0px 10px 27px 12px rgb(0 0 0 / 5%);
+    display: none;
+}
+
+.icon .fa-shopping-basket:hover .giohang {
+    display: block;
+}
+
+.giohang>p {
+    font-size: 15px;
+    margin: 13px 15px;
+    line-height: 20px;
+}
+
+.icon .fa-user {
+    position: relative;
+}
+
+.people {
+    background: white;
+    width: 180px;
+    height: 80px;
+    right: 0px;
+    bottom: -110px;
+    position: absolute;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid var(--color-green);
+    display: none;
+    box-shadow: 0px 10px 27px 12px rgb(0 0 0 / 5%);
+}
+
+.people a {
+    display: block;
+    color: var(--color-while);
+    padding: 10px 0px;
+    width: 150px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 3px auto;
+}
+
+.icon .fa-user:hover .people {
+    display: block;
+}
+
+.number1>p {
+    font-size: 13px;
+}
+
+.number1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    bottom: 20px;
+    left: 24px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+}
+
+.icon .fa-shopping-basket {
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* nut bên trái */
+
+.cac-icon {
+    width: 25%;
+    margin-top: 35px;
+}
+
+.gui textarea {
+    padding-top: 10px;
+}
+
+.menu-item1 .fal {
+    font-weight: 300;
+    color: rgb(277, 65, 72);
+}
+
+.search {
+    background-color: rgb(245, 245, 245);
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    height: 28px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    text-indent: 15px;
+    width: 150px;
+}
+
+.search i {
+    color: rgb(54, 46, 46);
+}
+
+.cac-icon .icon i {
+    font-size: 20px;
+    color: rgb(54, 46, 46);
+    padding-left: 15px;
+}
+
+
+/* phần menu con */
+
+.submenu {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    z-index: 10;
+    background: #ffff;
+    width: 200px;
+    display: none;
+    visibility: hidden;
+}
+
+.submenu li a {
+    text-decoration: none;
+    display: block;
+    text-indent: 10px;
+    color: black;
+    font-size: 15px;
+    color: var(--primary-color);
+    line-height: 45px;
+}
+
+.menu-item1>li:hover .submenu {
+    display: block;
+    visibility: visible;
+}
+
+#footter {
+    margin-top: 60px;
+}
+
+.subscribe-TT {
+    width: 100%;
+    height: 232px;
+    background-image: url(https://food-03.web4s.vn/uploads/plugin/custom_img/2019-08-23/1566527241-1511252633-custom.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.text-subscribe-TT {
+    flex: 1;
+    text-align: center;
+}
+
+.text-subscribe-TT h2 {
+    margin-top: 90px;
+}
+
+.subscribe-TT-input {
+    flex: 1;
+}
+
+.form-input {
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 15px;
+}
+
+.form-input input {
+    width: 350px;
+    height: 43px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 30px;
+}
+
+.form-input button {
+    width: 100px;
+    height: 43px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.form-input button:hover {
+    background-color: #f7b111;
+    transition: 0.4s ease-in;
+}
+
+
+/* PHẦN BANNER */
+
+#content {
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.banner {
+    background-image: url("img/banner_dau.jpg");
+    width: 100%;
+    height: 170px;
+    margin-top: 100px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.trangchu-lienhe .fa-chevron-right {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.banner {
+    background-image: url("img/banner_dau.jpg");
+    width: 100%;
+    height: 170px;
+    margin-top: 100px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-text {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gioithieu {
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.trangchu-lienhe .fa-chevron-right {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.banner-text>h1 {
+    color: #f7b111;
+    letter-spacing: 4px;
+}
+
+.banner-text>h1 {
+    color: #f7b111;
+    letter-spacing: 4px;
+}
+
+.banner-text a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.trangchu-lienhe .fa-chevron-right {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+
+/* Phần nọi dung */
+
+.noidung {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.test {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content-left {
+    flex: 1;
+}
+
+.content-right {
+    flex: 2;
+}
+
+.content-right iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 25px;
+}
+
+.diachi {
+    list-style: none;
+}
+
+.diachi li {
+    display: flex;
+    vertical-align: middle;
+    margin: 25px 0px;
+}
+
+.gui input {
+    width: 350px;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.diachi i {
+    display: inline;
+    color: rgb(183, 220, 54);
+}
+
+.diachi li p {
+    margin-left: 15px;
+}
+
+.gui input,
+textarea {
+    text-indent: 15px;
+    border: 1px solid #ccc;
+    outline: black;
+}
+
+.gui textarea {
+    width: 350px;
+    height: 133px;
+    border-radius: 30px;
+    resize: none;
+}
+
+.content-left hr {
+    opacity: 0.3;
+}
+
+.gui-lienhe>input {
+    width: 150px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    height: 46px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+}
+
+.gui {
+    margin: 28px 0px;
+}

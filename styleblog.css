@@ -1,0 +1,858 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --color-grn: #b7dc36;
+    --primary-color: #8b8b99;
+    --color-while: #ffff;
+    --color-green: #2a7d2e;
+}
+
+.menu-item .menu-item1 {
+    display: flex;
+}
+
+body {
+    background-color: var(--color-while);
+}
+
+html {
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+#header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /* padding: 0px 70px; */
+    position: fixed;
+    z-index: 10;
+    background-color: #ffff;
+}
+
+.header-logo {
+    width: 25%;
+    background: var(--color-while);
+    text-align: center;
+    margin-top: 25px;
+}
+
+.oganic {
+    width: 220px;
+}
+
+.menu {
+    line-height: 100px;
+    width: 50%;
+    /* justify-content: space-between; */
+    /* background-color: #ffff; */
+}
+
+.menu-item1>li>a:hover {
+    color: var(--color-green);
+}
+
+.submenu li a:hover {
+    background-color: yellowgreen;
+    border-bottom: yellowgreen;
+    color: var(--color-while);
+}
+
+.menu-item1 {
+    position: relative;
+}
+
+.menu-item1 li {
+    list-style: none;
+}
+
+.menu-item1 li a {
+    text-decoration: none;
+    padding: 0px 15px;
+    /* color: #000; */
+    color: black;
+    display: block;
+}
+
+
+/* TÌM KIẾMS */
+
+.cac-icon {
+    display: flex;
+}
+
+
+/* nut bên trái */
+
+.cac-icon {
+    width: 25%;
+    margin-top: 35px;
+}
+
+.menu-item1 .fal {
+    font-weight: 300;
+    color: rgb(277, 65, 72);
+}
+
+.search {
+    background-color: rgb(245, 245, 245);
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    height: 28px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    text-indent: 15px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.search i {
+    color: rgb(54, 46, 46);
+}
+
+.cac-icon .icon {}
+
+.cac-icon .icon i {
+    font-size: 20px;
+    color: rgb(54, 46, 46);
+    padding-left: 15px;
+}
+
+
+/* phan hover */
+
+.giohang {
+    width: 240px;
+    height: 68px;
+    background: var(--color-while);
+    position: absolute;
+    right: 0px;
+    border-radius: 8px;
+    bottom: -100px;
+    border: 1px solid var(--color-green);
+    box-shadow: 0px 10px 27px 12px rgb(0 0 0 / 5%);
+    display: none;
+}
+
+.icon .fa-shopping-basket:hover .giohang {
+    display: block;
+}
+
+.giohang>p {
+    font-size: 15px;
+    margin: 13px 15px;
+    line-height: 20px;
+}
+
+.icon .fa-user {
+    position: relative;
+}
+
+.people {
+    background: white;
+    width: 180px;
+    height: 80px;
+    right: 0px;
+    bottom: -110px;
+    position: absolute;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid var(--color-green);
+    display: none;
+    box-shadow: 0px 10px 27px 12px rgb(0 0 0 / 5%);
+}
+
+.people a {
+    display: block;
+    color: var(--color-while);
+    padding: 10px 0px;
+    width: 150px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 3px auto;
+}
+
+.icon .fa-user:hover .people {
+    display: block;
+}
+
+.number1>p {
+    font-size: 13px;
+}
+
+.number1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    bottom: 20px;
+    left: 24px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+}
+
+.icon .fa-shopping-basket {
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* phần menu con */
+
+.submenu {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    z-index: 10;
+    background: #ffff;
+    width: 200px;
+    display: none;
+    visibility: hidden;
+}
+
+.submenu li a {
+    text-decoration: none;
+    display: block;
+    text-indent: 10px;
+    color: black;
+    font-size: 15px;
+    color: var(--primary-color);
+    line-height: 45px;
+}
+
+.menu-item1>li:hover .submenu {
+    display: block;
+    visibility: visible;
+}
+
+#footter {
+    margin-top: 60px;
+}
+
+.subscribe-TT {
+    width: 100%;
+    height: 232px;
+    background-image: url(https://food-03.web4s.vn/uploads/plugin/custom_img/2019-08-23/1566527241-1511252633-custom.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.text-subscribe-TT {
+    flex: 1;
+    text-align: center;
+}
+
+.text-subscribe-TT h2 {
+    margin-top: 90px;
+}
+
+.subscribe-TT-input {
+    flex: 1;
+}
+
+.form-input {
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 15px;
+}
+
+.form-input input {
+    width: 350px;
+    height: 43px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.form-input button {
+    width: 100px;
+    height: 43px;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.form-input button:hover {
+    background-color: #f7b111;
+    transition: 0.4s ease-in;
+}
+
+#content {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.banner {
+    background-image: url("img/banner_dau.jpg");
+    width: 100%;
+    height: 170px;
+    margin-top: 100px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-text {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gioithieu {
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.trangchu-lienhe .fa-chevron-right {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.banner-text a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.banner-text>h1 {
+    color: #f7b111;
+    letter-spacing: 4px;
+}
+
+.trangchu-lienhe i {
+    opacity: 0.6;
+}
+
+.khoi-content {
+    width: 90%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+}
+
+.khoi-text>h3 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #2a7d2e;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.thuonghieu,
+.thuong {
+    display: flex;
+}
+
+.khoi-text {
+    text-align: left;
+}
+
+.anh-fruit-bottom img {
+    width: 100px;
+    border: 1px solid #000;
+    margin: 0px 10px;
+}
+
+.update_quantily {
+    display: flex;
+}
+
+.thuonghieu {
+    text-indent: -8px;
+    margin: 15px 0px;
+}
+
+.gia-thanh {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-grn);
+}
+
+.thuong .last {
+    color: var(--color-grn);
+}
+
+.thuonghieu .hieu {
+    border-right: 1px solid #000;
+}
+
+.thuonghieu .thuong .trademark {
+    padding: 0px 10px;
+}
+
+.khoi-text {
+    width: 50%;
+    margin: 40px;
+}
+
+.thongtin {
+    margin: 15px 0px;
+}
+
+.khoi-text hr {
+    width: 550px;
+    opacity: 0.3;
+}
+
+.anh-fruit {
+    width: 50%;
+    text-align: center;
+}
+
+.anh-fruit-top>img {
+    height: 400px;
+    width: auto;
+}
+
+.one {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px 10px;
+}
+
+.one>.one_cong {
+    line-height: 30px;
+    text-align: center;
+}
+
+.update_quantily .number {
+    margin-top: 25px;
+}
+
+.khoi-text input {
+    width: 270px;
+    height: 44px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--color-while);
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+}
+
+.khoi-text .lienhe {
+    margin: 15px 0px;
+}
+
+
+/* MÔ TẢ SAN PHAM */
+
+.mota {
+    box-sizing: border-box;
+    width: 90%;
+    height: auto;
+    margin: 60px auto;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.mota h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #2a7d2e;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.mota p {
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+
+/* SAN PHAM LIEN QUAN */
+
+#fruit {
+    height: auto;
+    margin: auto;
+}
+
+.ctner {
+    position: relative;
+}
+
+#fruit h3,
+#selling h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #2a7d2e;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#fruit>p,
+#selling>p {
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0.6;
+}
+
+.khoi-fruit li {
+    margin: 15px 0px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.khoi-fruit {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+/* ICON giỏ hàng */
+
+.ctnner {
+    position: relative;
+}
+
+.icon-overlay {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 5%;
+    opacity: 0;
+}
+
+.icon-overlay a i {
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--color-while);
+}
+
+.icon-overlay a {
+    margin: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: var(--color-grn);
+}
+
+.ctnner:hover .icon-overlay {
+    opacity: 1;
+}
+
+.icon-overlay a:hover {
+    background-color: #2a7d2e;
+    transition: 0.4s ease-in;
+}
+
+.ctnner:hover img {
+    opacity: 0.6;
+}
+
+
+/* cac hover */
+
+.khoi-fruit li:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.khoi-fruit img {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    width: 262px;
+    height: 260px;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text3 {
+    background-color: #b7dc36;
+    opacity: 0.6;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.ctner:hover img {
+    opacity: 0.6;
+}
+
+.ctner:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    width: 263px;
+    height: 50px;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 131px;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.khoi-fruit li {
+    width: 263px;
+    height: 355px;
+    list-style: none;
+    background: rgb(245, 246, 251);
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.khoi-fruit li .name-fruit {
+    margin-top: 20px;
+}
+
+.name-fruit {
+    font-weight: bold;
+}
+
+.gia {
+    margin: 0px 70px;
+    display: flex;
+}
+
+.gia .Gia-cu {
+    margin-left: 25px;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.Gia-moi {
+    color: var(--color-green);
+}
+
+
+/* footer */
+
+#footer {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.footer-top {
+    background: rgb(241, 233, 221);
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+    background-size: contain;
+    display: flex;
+}
+
+.footer-top>h2 {
+    font-size: 20px;
+    color: #999;
+    margin-top: 8%;
+}
+
+.subsribe-item>input {
+    width: 400px;
+    text-indent: 15px;
+    height: 42px;
+    float: left;
+    border: none;
+    outline: none;
+}
+
+.subsribe-item>button {
+    cursor: pointer;
+    font-size: 15px;
+    height: 42px;
+    border: none;
+    width: 101px;
+    margin-left: -5px;
+    color: #fff;
+    border: none;
+    background: -webkit-linear-gradient( 35deg, #91ad41 0%, #ff8a6c 100%) !important;
+}
+
+.subsribe {
+    overflow: hidden;
+    width: 500px;
+    height: 45px;
+    border: 2px solid -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    margin-top: 7%;
+}
+
+.footer-bottom {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    color: #000;
+}
+
+.block-footer {
+    display: flex;
+    line-height: 37px;
+}
+
+.footer-item {
+    flex: 1;
+    padding: 40px 20px 15px 20px;
+}
+
+.block-footer .item-left {
+    flex: 2;
+}
+
+.store {
+    width: 350px;
+}
+
+.footer-item ul li {
+    list-style: none;
+}
+
+.make-by {
+    padding: 20px 15px;
+}
+
+.block-footer>hr {
+    color: #8b8b99;
+}
+
+.store li p {
+    padding-left: 5px;
+    display: inline;
+}
+
+.facebook {
+    margin-top: 10px;
+}
+
+.footer-item i {
+    color: var(--color-grn);
+}
+
+.footer-item>img {
+    width: 200px;
+}
+
+.the_laster {
+    font-size: 18px;
+    color: #2a7d2e;
+}
+
+.footer_hr {
+    width: 60px;
+    border: 1px solid #b7dc36;
+    background: #b7dc36;
+}
+
+.make_by_hr {
+    opacity: 0.4;
+}
+
+.make_by_creat {
+    background: rgb(241, 233, 221);
+}
+
+#top-barnd-name {
+    margin: 60px 0px;
+    text-align: center;
+}
+
+#top-barnd-name>h2 {
+    text-transform: uppercase;
+    color: #2a7d2e;
+}
+
+#top-barnd-name>img {
+    width: 240px;
+    height: 50px;
+    text-align: center;
+}
+
+.khoi-brands img {
+    padding: 15px 32px 0px 32px;
+}
+
+
+/* phần lien hệ */
+
+.somebody {
+    z-index: 20;
+    position: fixed;
+    top: 45%;
+    right: 0;
+}
+
+.somebody>a {
+    display: block;
+    margin: 8px 15px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.goi_chung_toi {
+    visibility: hidden;
+    min-width: max-content;
+    height: auto;
+    margin: 5px -10px;
+    background: rgb(39, 23, 23);
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    padding: 10px 10px;
+    right: 90px;
+    font-size: 12px;
+}
+
+.goi_chung_toi::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+a:hover .goi_chung_toi {
+    visibility: visible;
+    /* opacity: 1; */
+}
